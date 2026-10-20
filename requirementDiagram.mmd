@@ -1,0 +1,26 @@
+requirementDiagram
+    requirement R1 {
+        id: R1
+        text: The system shall allow users to log in using their email and password.
+    }
+    requirement R2 {
+        id: R2
+        text: The system shall provide a password recovery option for users who forget their password.
+    }
+    requirement R3 {
+        id: R3
+        text: The system shall allow users to update their profile information.
+    }
+    requirement R4 {
+        id: R4
+        text: The system shall send a confirmation email upon successful registration.
+    }
+    requirement R5 {
+        id: R5
+        text: The system shall log all user activities for security auditing purposes.
+    }
+
+    R1 - traces -> R2
+    R1 - derives -> R3
+    R1 - derives -> R4
+    R5 - traces -> R1
